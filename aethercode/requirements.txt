@@ -1,0 +1,26 @@
+# --- Core web framework ---
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+
+# --- Config / settings management ---
+pydantic==2.9.2
+pydantic-settings==2.5.2
+python-dotenv==1.0.1
+PyGithub==2.4.0
+
+# --- Supabase (Database + pgvector + Auth) ---
+supabase==2.7.4
+
+# --- Repo loading (Phase 2) ---
+gitpython==3.1.43
+
+# --- Sandboxed tests (Docker SDK) ---
+docker==7.1.0
+
+# --- Embeddings for vector search (Phase 2) ---
+sentence-transformers==3.1.1
+langgraph==0.2.39
+
+# --- LLM providers (Phase 2) ---
+groq==0.11.0
+google-generativeai==0.8.3
