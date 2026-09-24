@@ -43,18 +43,6 @@ npm run dev
 
 Open **http://127.0.0.1:5173**. The Vite proxy forwards `/health` and `/run-task` to the API on port 8000.
 
-## Deploy
 
-1. Set the same variables from `.env.example` on your host (do not upload `.env`).
-2. Set `ENV=production`.
-3. Set `CORS_ORIGINS` to your dashboard URL (comma-separated if you have more than one).
-4. Backend: run `uvicorn main:app --host 0.0.0.0 --port 8000` from `aethercode/` (or any process manager / container that does the same).
-5. Frontend: `cd frontend && npm run build`. Serve `frontend/dist`. Build with `VITE_API_BASE` pointing at the public API URL, for example:
-
-```powershell
-cd frontend
-$env:VITE_API_BASE="https://api.example.com"
-npm run build
-```
 
 The pipeline uses Docker and GitHub from the machine that runs the backend, so that host must have Docker available and a valid `GITHUB_TOKEN`.
